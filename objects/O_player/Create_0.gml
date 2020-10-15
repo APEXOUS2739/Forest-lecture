@@ -3,7 +3,7 @@
 image_speed = 0;
 speed_ = 2;
 //global.player_health = 4;
-array_[0] = "sword";
-array_[1] = "potion";
+array_[0, 1] = "sword";
+array_[1, 0] = "potion";
 
-show_message(array_[1]);
+show_message(array_[1, 0]);
