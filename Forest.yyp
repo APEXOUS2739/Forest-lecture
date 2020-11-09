@@ -2,7 +2,7 @@
   "resources": [
     {"id":{"name":"s_solid","path":"sprites/s_solid/s_solid.yy",},"order":3,},
     {"id":{"name":"O_player","path":"objects/O_player/O_player.yy",},"order":0,},
-    {"id":{"name":"s_player_run_right","path":"sprites/s_player_run_right/s_player_run_right.yy",},"order":0,},
+    {"id":{"name":"S_player_run_right","path":"sprites/S_player_run_right/S_player_run_right.yy",},"order":0,},
     {"id":{"name":"o_solid","path":"objects/o_solid/o_solid.yy",},"order":1,},
     {"id":{"name":"S_player_run_up","path":"sprites/S_player_run_up/S_player_run_up.yy",},"order":1,},
     {"id":{"name":"S_player_run_down","path":"sprites/S_player_run_down/S_player_run_down.yy",},"order":2,},

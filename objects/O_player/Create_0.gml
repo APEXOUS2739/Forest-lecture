@@ -1,9 +1,31 @@
 /// @description Insert description here
 // You can write your code in this editor
+direction_facing_ = dir.right
 image_speed = 0;
 speed_ = 2;
 //global.player_health = 4;
-array_[0, 1] = "sword";
-array_[1, 0] = "potion";
+enum player {
+	move
+}
+enum dir {
+	right,
+	up,
+	left,
+	down
+}
+enum item {
+	sword,
+	potion,
+	spell,
+	note
+}
 
-show_message(array_[1, 0]);
+sprite[player.move,dir.right] = S_player_run_right
+sprite[player.move,dir.up] = S_player_run_up
+sprite[player.move,dir.left] = S_player_run_right
+sprite[player.move,dir.down] = S_player_run_down
+inventory_[item.sword] = "sword";
+inventory_[item.potion] = "potion";
+inventory_[item.spell] = "spell";
+inventory_[item.note] = "note";
+show_message(inventory_[item.spell]);
