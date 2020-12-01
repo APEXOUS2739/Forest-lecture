@@ -3,33 +3,27 @@
 image_speed = 0;
 // sets speed for the sprite frames
 var _animation_speed = 0.6;
+var _x_input = keyboard_check(ord("D")) - keyboard_check(ord("A"));
+var _y_input = keyboard_check(ord("S")) - keyboard_check(ord("W"));
+var _input_direction = point_direction(0,0,_x_input,_y_input);
+direction_facing = round(_input_direction/90);
+if direction_facing == 4{
+	direction_facing = 0;
+}
 // changes sprite direction right
-if(keyboard_check(ord("D"))) && !place_meeting(x+speed_,y,o_solid){
-	x += speed_;
-	direction_facing_ = dir.right
+if(_x_input != 0) && !place_meeting(x+speed_*_x_input,y,o_solid){
+	x += speed_*_x_input;
 	image_speed = _animation_speed;
-	image_xscale = 1;
+	image_xscale = _x_input;
 	sprite_index = S_player_run_right;
 }
 // changes sprite direction left
-if(keyboard_check(ord("A"))) && !place_meeting(x-speed_,y,o_solid){
-	x -= speed_;
-	direction_facing_ = dir.right
-	image_speed = _animation_speed;
-	sprite_index = S_player_run_right;
-	image_xscale = -1;
-}
+
 // changes sprite direction up
-if(keyboard_check(ord("W"))) && !place_meeting(x,y-speed_,o_solid){
-	y -= speed_;
-	direction_facing_ = dir.up
+if (_y_input !=0) && !place_meeting(x,y+speed_*_y_input,o_solid){
+	y += speed_*_y_input;
 	image_speed = _animation_speed;
 	sprite_index = S_player_run_up;
 }
 // changes sprite direction down
-if(keyboard_check(ord("S"))) && !place_meeting(x,y+speed_,o_solid){
-	y += speed_;
-	direction_facing_ = dir.down
-	image_speed = _animation_speed;
-	sprite_index = S_player_run_down;
-}
+sprite_index = sprite_[player.move, direction_facing]
