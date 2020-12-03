@@ -1,9 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
+initialize_movement_entity(.5,1,o_solid);
 direction_facing = dir.right
-direction_ = 0;
+
 image_speed = 0;
-speed_ = 2;
+acceleration_ = .5;
+max_speed_ = 1.5;
 //global.player_health = 4;
 enum player {
 	move

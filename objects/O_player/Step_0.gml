@@ -6,10 +6,7 @@ var _animation_speed = 0.6;
 var _x_input = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var _y_input = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 var _input_direction = point_direction(0,0,_x_input,_y_input);
-direction_facing = round(_input_direction/90);
-if direction_facing == 4{
-	direction_facing = 0;
-}
+get_direction_facing();
 // changes sprite direction right
 if(_x_input != 0) && !place_meeting(x+speed_*_x_input,y,o_solid){
 	x += speed_*_x_input;
