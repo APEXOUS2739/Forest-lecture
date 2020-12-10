@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "movment scrips",
+    "path": "folders/Scripts/movment scrips.yy",
   },
   "resourceVersion": "1.0",
-  "name": "get_direction_facing",
+  "name": "approach",
   "tags": [],
   "resourceType": "GMScript",
 }
