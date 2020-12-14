@@ -1,5 +1,4 @@
 {
-  "name": "t_dirtwall",
   "spriteId": {
     "name": "s_dirtwall_tileset",
     "path": "sprites/s_dirtwall_tileset/s_dirtwall_tileset.yy",
@@ -37,7 +36,7 @@
         15,
         16,
         17,
-      ],"closed_edge":false,"resourceVersion":"1.0","name":"autotile_1","tags":[],"resourceType":"GMAutoTileSet",},
+      ],"closed_edge":true,"resourceVersion":"1.0","name":"autotile_1","tags":[],"resourceType":"GMAutoTileSet",},
   ],
   "tileAnimationFrames": [],
   "tileAnimationSpeed": 15.0,
@@ -74,6 +73,7 @@
     "path": "folders/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
+  "name": "t_dirtwall",
   "tags": [],
   "resourceType": "GMTileSet",
 }

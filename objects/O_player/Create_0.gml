@@ -7,7 +7,8 @@ acceleration_ = .5;
 max_speed_ = 1.5;
 //global.player_health = 4;
 enum player {
-	move
+	move,
+	sword
 }
 enum dir {
 	right,
@@ -15,6 +16,7 @@ enum dir {
 	left,
 	down
 }
+state_ = player.move;
 /*enum item {
 	sword,
 	potion,
@@ -26,6 +28,11 @@ sprite_[player.move,dir.right] = S_player_run_right
 sprite_[player.move,dir.up] = S_player_run_up
 sprite_[player.move,dir.left] = S_player_run_right
 sprite_[player.move,dir.down] = S_player_run_down
+
+sprite_[player.sword,dir.right] = S_player_attack_right
+sprite_[player.sword,dir.up] = S_player_attack_up
+sprite_[player.sword,dir.left] = S_player_attack_right
+sprite_[player.sword,dir.down] = S_player_attack_down
 //inventory_[item.sword] = "sword";
 //inventory_[item.potion] = "potion";
 //inventory_[item.spell] = "spell";
