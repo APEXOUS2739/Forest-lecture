@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "s_dirtpath_tileset",
-    "path": "sprites/s_dirtpath_tileset/s_dirtpath_tileset.yy",
+    "name": "s_dirtpat_tileset",
+    "path": "sprites/s_dirtpat_tileset/s_dirtpat_tileset.yy",
   },
   "tileWidth": 16,
   "tileHeight": 16,

@@ -1,5 +1,3 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 ///@arg direction
 ///@arg acceleration
 ///@arg max_speed
@@ -21,4 +19,3 @@ function add_movement_maxspeed(argument0, argument1, argument2) {
 	direction_ = point_direction(0, 0, _x_speed, _y_speed);
 	speed_ = min(speed_, _max_speed);
 }
-

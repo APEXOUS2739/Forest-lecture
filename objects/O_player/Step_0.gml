@@ -1,4 +1,3 @@
-/// @description Controls
-// You can write your code in this editor
+depth = -y;
 event_user(state_);
-sprite_index = sprite_[state_, direction_facing]
+sprite_index = sprite_[state_, direction_facing];
